@@ -1,0 +1,22 @@
+{
+  "name": "@go-code-bot/list-builder",
+  "version": "1.0.0",
+  "description": "Gabriel Operator list-builder skill pack for Git-backed personal data lists",
+  "keywords": [
+    "gabriel-operator",
+    "list",
+    "data-list",
+    "skills"
+  ],
+  "license": "MIT",
+  "bin": {
+    "skills": "./cli.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/go-code-bot/list-builder.git"
+  }
+}

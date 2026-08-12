@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "target": "list_rows",
+  "list": {
+    "id": "list_b71350752c19",
+    "name": "Meridian Weekly Restock Pipeline list",
+    "description": null,
+    "collectionId": "coll_7685fc088020",
+    "pageId": "70e08a92-ef90-492a-bc7b-2f3b881af062",
+    "pipelineId": "pl_1ba2b6fe2636",
+    "columns": [
+      {
+        "key": "name",
+        "label": "Name",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "description",
+        "label": "Description",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "createdAt",
+        "label": "Created",
+        "type": "date",
+        "required": null,
+        "options": null
+      }
+    ]
+  },
+  "recordsFile": "data/records.json",
+  "import": {
+    "writeMode": "append",
+    "idField": "records[].id",
+    "rowDataPath": "records[].data"
+  }
+}
