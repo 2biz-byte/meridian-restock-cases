@@ -3,43 +3,120 @@
   "listId": "list_b71350752c19",
   "list": {
     "id": "list_b71350752c19",
-    "name": "Meridian Weekly Restock Pipeline list",
-    "description": null,
+    "name": "Meridian Restock Cases",
+    "description": "Weekly stock-out restock planning cases",
     "language": "en",
     "collectionId": "coll_7685fc088020",
+    "pipelineId": "pl_1ba2b6fe2636",
     "columns": [
       {
-        "key": "name",
-        "label": "Name",
-        "type": "text",
-        "required": null,
-        "options": null
-      },
-      {
-        "key": "description",
-        "label": "Description",
-        "type": "text",
-        "required": null,
-        "options": null
-      },
-      {
-        "key": "status",
-        "label": "Status",
-        "type": "text",
-        "required": null,
-        "options": null
-      },
-      {
-        "key": "createdAt",
-        "label": "Created",
+        "key": "week_of",
+        "label": "Week Of",
         "type": "date",
-        "required": null,
+        "required": false,
+        "options": null
+      },
+      {
+        "key": "source_kind",
+        "label": "Source Kind",
+        "type": "select",
+        "required": false,
+        "options": [
+          "shopify_sheets_gmail"
+        ]
+      },
+      {
+        "key": "at_risk_sku_count",
+        "label": "At-Risk SKU Count",
+        "type": "number",
+        "required": false,
+        "options": null
+      },
+      {
+        "key": "at_risk_skus",
+        "label": "At-Risk SKUs",
+        "type": "json",
+        "required": false,
+        "options": null
+      },
+      {
+        "key": "inventory_snapshot",
+        "label": "Inventory Snapshot",
+        "type": "json",
+        "required": false,
+        "options": null
+      },
+      {
+        "key": "forecast_7d",
+        "label": "7-Day Forecast",
+        "type": "json",
+        "required": false,
+        "options": null
+      },
+      {
+        "key": "reorder_lines",
+        "label": "Reorder Lines",
+        "type": "json",
+        "required": false,
+        "options": null
+      },
+      {
+        "key": "email_drafts",
+        "label": "Email Drafts",
+        "type": "json",
+        "required": false,
+        "options": null
+      },
+      {
+        "key": "email_draft_status",
+        "label": "Email Draft Status",
+        "type": "select",
+        "required": false,
+        "options": [
+          "none",
+          "drafted",
+          "approved",
+          "sent"
+        ]
+      },
+      {
+        "key": "summary",
+        "label": "Summary",
+        "type": "text",
+        "required": false,
+        "options": null
+      },
+      {
+        "key": "notes",
+        "label": "Notes",
+        "type": "text",
+        "required": false,
+        "options": null
+      },
+      {
+        "key": "case_attempt_id",
+        "label": "Case Attempt ID",
+        "type": "text",
+        "required": false,
+        "options": null
+      },
+      {
+        "key": "approved_by",
+        "label": "Approved By",
+        "type": "text",
+        "required": false,
+        "options": null
+      },
+      {
+        "key": "approved_at",
+        "label": "Approved At",
+        "type": "date",
+        "required": false,
         "options": null
       }
     ],
-    "pipelineId": "pl_1ba2b6fe2636",
     "child": null,
     "pageId": "70e08a92-ef90-492a-bc7b-2f3b881af062"
   },
-  "commitMessage": "Initial migration from list editor"
+  "commitMessage": "Define Meridian restock case list schema"
 }
