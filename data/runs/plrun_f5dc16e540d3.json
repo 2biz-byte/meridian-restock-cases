@@ -4,9 +4,9 @@
     "id": "plrun_f5dc16e540d3",
     "pipelineId": "pl_1ba2b6fe2636",
     "status": "running",
-    "currentStageId": "stage_94vdup9",
+    "currentStageId": "stage_501w69i",
     "startedAt": "2026-08-15T16:30:23.926Z",
-    "lastActivityAt": "2026-08-15T16:30:33.083Z",
+    "lastActivityAt": "2026-08-15T16:30:47.007Z",
     "activity": [
       {
         "at": "2026-08-15T16:30:23.932Z",
@@ -88,8 +88,79 @@
           "workflowExecutionId": "run_plattempt_4deebc82ba61",
           "transitionId": "stage_z4ump26__default"
         }
+      },
+      {
+        "at": "2026-08-15T16:30:33.145Z",
+        "stageId": "stage_94vdup9",
+        "title": "Canvas transition committed",
+        "status": "success",
+        "data": {
+          "commandRunId": "cmdrun_7f3152e1745d",
+          "taskExecutionSessionId": "478d6b50-4aca-4855-945a-3e8e4a886fd8",
+          "canvasTaskId": "read_inventory",
+          "pipelineCaseBindingId": "plbind_8149cbe1076a",
+          "pipelineRunId": "plrun_f5dc16e540d3",
+          "pipelineId": "pl_1ba2b6fe2636",
+          "transitionId": "stage_z4ump26__default",
+          "workflowRunId": null,
+          "userId": "1786534579080",
+          "attempt": 1,
+          "idempotencyKey": "plbind_8149cbe1076a:read_inventory:1"
+        }
+      },
+      {
+        "at": "2026-08-15T16:30:39.272Z",
+        "stageId": "stage_94vdup9",
+        "title": "Canvas transition requested",
+        "status": "running",
+        "data": {
+          "commandRunId": "cmdrun_7f3152e1745d",
+          "taskExecutionSessionId": "478d6b50-4aca-4855-945a-3e8e4a886fd8",
+          "canvasTaskId": "forecast_sales",
+          "pipelineCaseBindingId": "plbind_8149cbe1076a",
+          "pipelineRunId": "plrun_f5dc16e540d3",
+          "pipelineId": "pl_1ba2b6fe2636",
+          "transitionId": "stage_94vdup9__default",
+          "workflowRunId": null,
+          "userId": "1786534579080",
+          "attempt": 1,
+          "idempotencyKey": "plbind_8149cbe1076a:forecast_sales:1"
+        }
+      },
+      {
+        "at": "2026-08-15T16:30:40.992Z",
+        "stageId": "stage_94vdup9",
+        "title": "Workflow execution started",
+        "status": "running",
+        "body": null,
+        "data": {
+          "workflowExecutionId": "run_plattempt_2e31eb0509e3",
+          "transitionId": "stage_94vdup9__default"
+        }
+      },
+      {
+        "at": "2026-08-15T16:30:44.278Z",
+        "stageId": "stage_94vdup9",
+        "title": "Workflow execution started",
+        "status": "running",
+        "body": null,
+        "data": {
+          "workflowExecutionId": "run_plattempt_2e31eb0509e3",
+          "transitionId": "stage_94vdup9__default"
+        }
+      },
+      {
+        "at": "2026-08-15T16:30:47.007Z",
+        "stageId": "stage_501w69i",
+        "title": "Transition completed",
+        "status": "success",
+        "body": null,
+        "data": {
+          "workflowExecutionId": "run_plattempt_2e31eb0509e3",
+          "transitionId": "stage_94vdup9__default"
+        }
       }
     ]
   },
-  "snapshotAt": "2026-08-15T16:30:33.117Z"
+  "snapshotAt": "2026-08-15T16:30:47.041Z"
 }
