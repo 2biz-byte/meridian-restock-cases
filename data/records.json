@@ -3,9 +3,9 @@
   "listId": "list_b71350752c19",
   "collectionId": "coll_7685fc088020",
   "writeMode": "append",
-  "snapshotAt": "2026-08-15T17:20:55.661Z",
+  "snapshotAt": "2026-08-15T18:54:53.473Z",
   "reason": "run_transition",
-  "count": 2,
+  "count": 3,
   "records": [
     {
       "id": "6a809429869351d0b724a1a7",
@@ -535,6 +535,128 @@
                   ],
                   "workflowRunId": "run_plattempt_7c9d4564dbd7"
                 }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "6a80b5fd4f335fcc962d5e58",
+      "data": {
+        "week_of": "2024-05-20",
+        "source_kind": "shopify_sheets_gmail",
+        "at_risk_sku_count": 4,
+        "at_risk_skus": [
+          "AP-TEE-101",
+          "AP-DEN-214",
+          "AP-HDY-088",
+          "AP-SOX-033"
+        ],
+        "inventory_snapshot": [
+          {
+            "sku": "AP-TEE-101",
+            "on_hand": 6,
+            "reorder_point": 24,
+            "week_risk": "High"
+          },
+          {
+            "sku": "AP-DEN-214",
+            "on_hand": 4,
+            "reorder_point": 18,
+            "week_risk": "High"
+          },
+          {
+            "sku": "AP-HDY-088",
+            "on_hand": 9,
+            "reorder_point": 20,
+            "week_risk": "High"
+          },
+          {
+            "sku": "AP-SOX-033",
+            "on_hand": 22,
+            "reorder_point": 40,
+            "week_risk": "Medium"
+          },
+          {
+            "sku": "AP-CAP-019",
+            "on_hand": 31,
+            "reorder_point": 16,
+            "week_risk": "Low"
+          },
+          {
+            "sku": "AP-BLT-007",
+            "on_hand": 18,
+            "reorder_point": 12,
+            "week_risk": "Low"
+          }
+        ],
+        "_pipelineRunId": "plrun_71d3f70f7fb4",
+        "_workflowState": {
+          "pl_1ba2b6fe2636": {
+            "stage": "stage_94vdup9",
+            "snapshot": {
+              "status": "active",
+              "output": null,
+              "error": null,
+              "value": "stage_94vdup9",
+              "context": {
+                "week_of": "2024-05-20",
+                "source_kind": "shopify_sheets_gmail",
+                "at_risk_sku_count": 4,
+                "at_risk_skus": [
+                  "AP-TEE-101",
+                  "AP-DEN-214",
+                  "AP-HDY-088",
+                  "AP-SOX-033"
+                ],
+                "inventory_snapshot": [
+                  {
+                    "sku": "AP-TEE-101",
+                    "on_hand": 6,
+                    "reorder_point": 24,
+                    "week_risk": "High"
+                  },
+                  {
+                    "sku": "AP-DEN-214",
+                    "on_hand": 4,
+                    "reorder_point": 18,
+                    "week_risk": "High"
+                  },
+                  {
+                    "sku": "AP-HDY-088",
+                    "on_hand": 9,
+                    "reorder_point": 20,
+                    "week_risk": "High"
+                  },
+                  {
+                    "sku": "AP-SOX-033",
+                    "on_hand": 22,
+                    "reorder_point": 40,
+                    "week_risk": "Medium"
+                  },
+                  {
+                    "sku": "AP-CAP-019",
+                    "on_hand": 31,
+                    "reorder_point": 16,
+                    "week_risk": "Low"
+                  },
+                  {
+                    "sku": "AP-BLT-007",
+                    "on_hand": 18,
+                    "reorder_point": 12,
+                    "week_risk": "Low"
+                  }
+                ],
+                "_stage": "stage_94vdup9"
+              }
+            },
+            "activity": [
+              {
+                "at": "2026-08-15T18:54:53.434Z",
+                "stageId": "stage_94vdup9",
+                "title": "Created by transition: intake",
+                "status": "info"
               }
             ]
           }
