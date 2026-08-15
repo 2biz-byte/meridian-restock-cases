@@ -3,7 +3,7 @@
   "listId": "list_b71350752c19",
   "collectionId": "coll_7685fc088020",
   "writeMode": "append",
-  "snapshotAt": "2026-08-15T18:58:24.223Z",
+  "snapshotAt": "2026-08-15T18:58:36.981Z",
   "reason": "run_transition",
   "count": 4,
   "records": [
@@ -856,12 +856,13 @@
         "_pipelineRunId": "plrun_24c1016b8623",
         "_workflowState": {
           "pl_1ba2b6fe2636": {
-            "stage": "stage_94vdup9",
+            "stage": "stage_501w69i",
             "snapshot": {
               "status": "active",
               "output": null,
               "error": null,
-              "value": "stage_94vdup9",
+              "value": "stage_501w69i",
+              "historyValue": {},
               "context": {
                 "week_of": "2024-05-20",
                 "source_kind": "shopify_sheets_gmail",
@@ -916,8 +917,10 @@
                     "week_risk": "Low"
                   }
                 ],
-                "_stage": "stage_94vdup9"
-              }
+                "_pipelineRunId": "plrun_24c1016b8623",
+                "_stage": "stage_501w69i"
+              },
+              "children": {}
             },
             "activity": [
               {
@@ -925,6 +928,137 @@
                 "stageId": "stage_94vdup9",
                 "title": "Created by transition: intake",
                 "status": "info"
+              },
+              {
+                "at": "2026-08-15T18:58:36.928Z",
+                "stageId": "stage_501w69i",
+                "fromStageId": "stage_94vdup9",
+                "transitionId": "stage_94vdup9__default",
+                "title": "Transition completed: inventory_ready",
+                "status": "success",
+                "actorKind": "user",
+                "actorUserId": "1786534579080",
+                "data": {
+                  "records": [
+                    {
+                      "patch": {
+                        "forecast_7d": [
+                          {
+                            "sku": "AP-TEE-101",
+                            "item": "Classic Tee Black M",
+                            "units_sold_7d": 48,
+                            "days_of_cover": 1,
+                            "suggested_qty": 36
+                          },
+                          {
+                            "sku": "AP-DEN-214",
+                            "item": "Slim Denim 32",
+                            "units_sold_7d": 29,
+                            "days_of_cover": 1,
+                            "suggested_qty": 28
+                          },
+                          {
+                            "sku": "AP-HDY-088",
+                            "item": "Fleece Hoodie Navy L",
+                            "units_sold_7d": 33,
+                            "days_of_cover": 1.9,
+                            "suggested_qty": 24
+                          },
+                          {
+                            "sku": "AP-SOX-033",
+                            "item": "Crew Socks 3pk",
+                            "units_sold_7d": 41,
+                            "days_of_cover": 3.8,
+                            "suggested_qty": 30
+                          }
+                        ],
+                        "reorder_lines": [
+                          {
+                            "sku": "AP-TEE-101",
+                            "item": "Classic Tee Black M",
+                            "suggested_qty": 36,
+                            "priority": "High"
+                          },
+                          {
+                            "sku": "AP-DEN-214",
+                            "item": "Slim Denim 32",
+                            "suggested_qty": 28,
+                            "priority": "High"
+                          },
+                          {
+                            "sku": "AP-HDY-088",
+                            "item": "Fleece Hoodie Navy L",
+                            "suggested_qty": 24,
+                            "priority": "High"
+                          },
+                          {
+                            "sku": "AP-SOX-033",
+                            "item": "Crew Socks 3pk",
+                            "suggested_qty": 30,
+                            "priority": "Medium"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "forecast_7d": [
+                    {
+                      "sku": "AP-TEE-101",
+                      "item": "Classic Tee Black M",
+                      "units_sold_7d": 48,
+                      "days_of_cover": 1,
+                      "suggested_qty": 36
+                    },
+                    {
+                      "sku": "AP-DEN-214",
+                      "item": "Slim Denim 32",
+                      "units_sold_7d": 29,
+                      "days_of_cover": 1,
+                      "suggested_qty": 28
+                    },
+                    {
+                      "sku": "AP-HDY-088",
+                      "item": "Fleece Hoodie Navy L",
+                      "units_sold_7d": 33,
+                      "days_of_cover": 1.9,
+                      "suggested_qty": 24
+                    },
+                    {
+                      "sku": "AP-SOX-033",
+                      "item": "Crew Socks 3pk",
+                      "units_sold_7d": 41,
+                      "days_of_cover": 3.8,
+                      "suggested_qty": 30
+                    }
+                  ],
+                  "reorder_lines": [
+                    {
+                      "sku": "AP-TEE-101",
+                      "item": "Classic Tee Black M",
+                      "suggested_qty": 36,
+                      "priority": "High"
+                    },
+                    {
+                      "sku": "AP-DEN-214",
+                      "item": "Slim Denim 32",
+                      "suggested_qty": 28,
+                      "priority": "High"
+                    },
+                    {
+                      "sku": "AP-HDY-088",
+                      "item": "Fleece Hoodie Navy L",
+                      "suggested_qty": 24,
+                      "priority": "High"
+                    },
+                    {
+                      "sku": "AP-SOX-033",
+                      "item": "Crew Socks 3pk",
+                      "suggested_qty": 30,
+                      "priority": "Medium"
+                    }
+                  ],
+                  "workflowRunId": "run_plattempt_3a1c0a3d3356"
+                }
               }
             ]
           }
