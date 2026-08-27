@@ -3,9 +3,9 @@
   "listId": "list_b71350752c19",
   "collectionId": "coll_7685fc088020",
   "writeMode": "append",
-  "snapshotAt": "2026-08-15T19:07:24.844Z",
-  "reason": "run_terminal",
-  "count": 5,
+  "snapshotAt": "2026-08-27T14:38:57.610Z",
+  "reason": "run_transition",
+  "count": 6,
   "records": [
     {
       "id": "6a809429869351d0b724a1a7",
@@ -1366,6 +1366,128 @@
                   "summary": "Restock plan created with supplier email drafts for approval.",
                   "workflowRunId": "run_plattempt_71aa5be1c80f"
                 }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "6a904c01e379ad350137805e",
+      "data": {
+        "week_of": "2025-05-19",
+        "source_kind": "shopify_sheets_gmail",
+        "at_risk_sku_count": 4,
+        "at_risk_skus": [
+          "AP-TEE-101",
+          "AP-DEN-214",
+          "AP-HDY-088",
+          "AP-SOX-033"
+        ],
+        "inventory_snapshot": [
+          {
+            "sku": "AP-TEE-101",
+            "on_hand": 6,
+            "reorder_point": 24,
+            "week_risk": "High"
+          },
+          {
+            "sku": "AP-DEN-214",
+            "on_hand": 4,
+            "reorder_point": 18,
+            "week_risk": "High"
+          },
+          {
+            "sku": "AP-HDY-088",
+            "on_hand": 9,
+            "reorder_point": 20,
+            "week_risk": "High"
+          },
+          {
+            "sku": "AP-SOX-033",
+            "on_hand": 22,
+            "reorder_point": 40,
+            "week_risk": "Medium"
+          },
+          {
+            "sku": "AP-CAP-019",
+            "on_hand": 31,
+            "reorder_point": 16,
+            "week_risk": "Low"
+          },
+          {
+            "sku": "AP-BLT-007",
+            "on_hand": 18,
+            "reorder_point": 12,
+            "week_risk": "Low"
+          }
+        ],
+        "_pipelineRunId": "plrun_817a05c2ed53",
+        "_workflowState": {
+          "pl_1ba2b6fe2636": {
+            "stage": "stage_94vdup9",
+            "snapshot": {
+              "status": "active",
+              "output": null,
+              "error": null,
+              "value": "stage_94vdup9",
+              "context": {
+                "week_of": "2025-05-19",
+                "source_kind": "shopify_sheets_gmail",
+                "at_risk_sku_count": 4,
+                "at_risk_skus": [
+                  "AP-TEE-101",
+                  "AP-DEN-214",
+                  "AP-HDY-088",
+                  "AP-SOX-033"
+                ],
+                "inventory_snapshot": [
+                  {
+                    "sku": "AP-TEE-101",
+                    "on_hand": 6,
+                    "reorder_point": 24,
+                    "week_risk": "High"
+                  },
+                  {
+                    "sku": "AP-DEN-214",
+                    "on_hand": 4,
+                    "reorder_point": 18,
+                    "week_risk": "High"
+                  },
+                  {
+                    "sku": "AP-HDY-088",
+                    "on_hand": 9,
+                    "reorder_point": 20,
+                    "week_risk": "High"
+                  },
+                  {
+                    "sku": "AP-SOX-033",
+                    "on_hand": 22,
+                    "reorder_point": 40,
+                    "week_risk": "Medium"
+                  },
+                  {
+                    "sku": "AP-CAP-019",
+                    "on_hand": 31,
+                    "reorder_point": 16,
+                    "week_risk": "Low"
+                  },
+                  {
+                    "sku": "AP-BLT-007",
+                    "on_hand": 18,
+                    "reorder_point": 12,
+                    "week_risk": "Low"
+                  }
+                ],
+                "_stage": "stage_94vdup9"
+              }
+            },
+            "activity": [
+              {
+                "at": "2026-08-27T14:38:57.544Z",
+                "stageId": "stage_94vdup9",
+                "title": "Created by transition: intake",
+                "status": "info"
               }
             ]
           }
