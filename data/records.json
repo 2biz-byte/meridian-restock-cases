@@ -3,8 +3,8 @@
   "listId": "list_b71350752c19",
   "collectionId": "coll_7685fc088020",
   "writeMode": "append",
-  "snapshotAt": "2026-08-27T14:39:13.667Z",
-  "reason": "run_transition",
+  "snapshotAt": "2026-08-27T14:39:25.461Z",
+  "reason": "run_terminal",
   "count": 6,
   "records": [
     {
@@ -1425,12 +1425,12 @@
         "_pipelineRunId": "plrun_817a05c2ed53",
         "_workflowState": {
           "pl_1ba2b6fe2636": {
-            "stage": "stage_501w69i",
+            "stage": "stage_wyp8879",
             "snapshot": {
-              "status": "active",
+              "status": "done",
               "output": null,
               "error": null,
-              "value": "stage_501w69i",
+              "value": "stage_wyp8879",
               "historyValue": {},
               "context": {
                 "week_of": "2025-05-19",
@@ -1481,7 +1481,7 @@
                   }
                 ],
                 "_pipelineRunId": "plrun_817a05c2ed53",
-                "_stage": "stage_501w69i"
+                "_stage": "stage_wyp8879"
               },
               "children": {}
             },
@@ -1621,6 +1621,45 @@
                     }
                   ],
                   "workflowRunId": "run_plattempt_af9235b360db"
+                }
+              },
+              {
+                "at": "2026-08-27T14:39:24.785Z",
+                "stageId": "stage_wyp8879",
+                "fromStageId": "stage_501w69i",
+                "transitionId": "stage_501w69i__default",
+                "title": "Transition completed: forecast_ready",
+                "status": "success",
+                "actorKind": "user",
+                "actorUserId": "1786534579080",
+                "data": {
+                  "records": [
+                    {
+                      "email_drafts": [
+                        {
+                          "to": "supplier@example.com",
+                          "subject": "Reorder quantity request - week of {{start.input.date}}",
+                          "body": "Hello,\n\nPlease review the following reorder requirements for the upcoming week:\n\nReorder Lines:\n{{start.input.reorder_lines}}\n\nAdditionally, please prioritize the following at-risk SKUs:\n{{start.input.at_risk_skus}}\n\nPlease confirm availability and lead times at your earliest convenience.\n\nBest regards,\nProcurement Team",
+                          "gmail_draft_id": "draft_local",
+                          "status": "drafted"
+                        }
+                      ],
+                      "email_draft_status": "drafted",
+                      "summary": "Restock plan created with supplier email drafts for approval."
+                    }
+                  ],
+                  "email_drafts": [
+                    {
+                      "to": "supplier@example.com",
+                      "subject": "Reorder quantity request - week of {{start.input.date}}",
+                      "body": "Hello,\n\nPlease review the following reorder requirements for the upcoming week:\n\nReorder Lines:\n{{start.input.reorder_lines}}\n\nAdditionally, please prioritize the following at-risk SKUs:\n{{start.input.at_risk_skus}}\n\nPlease confirm availability and lead times at your earliest convenience.\n\nBest regards,\nProcurement Team",
+                      "gmail_draft_id": "draft_local",
+                      "status": "drafted"
+                    }
+                  ],
+                  "email_draft_status": "drafted",
+                  "summary": "Restock plan created with supplier email drafts for approval.",
+                  "workflowRunId": "run_plattempt_66bf90a33d38"
                 }
               }
             ]
